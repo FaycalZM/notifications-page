@@ -1,0 +1,181 @@
+/* importing the fonts from their .ttf files */
+@font-face {
+    font-family: "PlusJakartaSans-ExtraBold";
+    src: url("assets/fonts/static/PlusJakartaSans-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "PlusJakartaSans-Medium";
+    src: url("assets/fonts/static/PlusJakartaSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: "PlusJakartaSans-VariableFont_wght";
+    src: url("assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: hsl(210, 60%, 98%);
+}
+
+.main_container {
+    width: 45%;
+    padding: 0 2%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+}
+
+.header {
+    padding: 25px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.title_num {
+    display: flex;
+    column-gap: 10%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#title {
+    font-family: "PlusJakartaSans-Medium", sans-serif;
+    font-size: 19px;
+    color: hsl(224, 21%, 14%);
+}
+
+#number {
+    font-family: "PlusJakartaSans-VariableFont_wght", sans-serif;
+    font-weight: 500;
+    font-size: smaller;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(219, 85%, 26%);
+    padding: 2% 8%;
+    border-radius: 20%;
+}
+
+#mark_all_as_read {
+    font-family: "PlusJakartaSans-VariableFont_wght", sans-serif;
+    font-size: 16px;
+    color: hsl(219, 12%, 42%);
+    cursor: pointer;
+}
+
+#mark_all_as_read:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.main_section {
+    max-height: 80%;
+}
+
+.notification {
+    display: flex;
+    column-gap: 20%;
+    margin-bottom: 1%;
+    border-radius: 7.5px;
+    align-items: baseline;
+    padding-right: .6rem;
+}
+
+.in_notif {
+    display: flex;
+    gap: 1rem;
+    padding: 2.5%;
+}
+
+.avatar,
+.posted_pic {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+
+.not_read {
+    background-color: hsl(210, 60%, 98%);
+}
+
+.name {
+    font-family: "PlusJakartaSans-ExtraBold", sans-serif;
+    font-size: 16px;
+    color: #000;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.in_notif>.not>.content,
+.msg {
+    font-family: "PlusJakartaSans-VariableFont_wght", sans-serif;
+    word-spacing: 2px;
+    color: hsl(219, 12%, 42%);
+}
+
+.in_notif {
+    flex-grow: 7;
+}
+
+.posted_pic {
+    flex-shrink: 3;
+}
+
+.msg:hover {
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+    transition: 300ms ease-in;
+}
+
+.highlighted {
+    color: hsl(219, 85%, 26%);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.recent_post {
+    color: hsl(219, 12%, 42%);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.recent_post:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.sent {
+    color: hsl(219, 14%, 63%);
+    font-family: "PlusJakartaSans-Medium", sans-serif;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.msg {
+    border: 1px hsl(205, 33%, 90%) solid;
+    padding: 3%;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.red_dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: hsl(1, 90%, 64%);
+    padding: 1px;
+    margin-left: 5px;
+}
