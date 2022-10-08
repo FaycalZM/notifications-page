@@ -179,3 +179,59 @@ body {
     padding: 1px;
     margin-left: 5px;
 }
+
+
+@media screen and (max-width:768px) {
+    .main_container {
+        width: 90%;
+    }
+
+    p {
+        font-size: 13.5px;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mark_all_as_read {
+        font-size: 18px;
+        padding: 0.8rem 0.9rem;
+        background-color: hsl(211, 68%, 94%);
+        border-radius: 10px;
+        color: hsl(219, 85%, 26%);
+        box-shadow: 0 10px 40px -20px hsl(219, 12%, 52%);
+        margin-top: .5rem;
+    }
+
+    #mark_all_as_read:hover {
+        color: hsl(219, 12%, 22%);
+        opacity: 0.75;
+        transition: .4s ease-out;
+    }
+
+    .title_num {
+        padding-bottom: 0.5rem;
+    }
+
+    #title {
+        font-size: 1.4rem;
+    }
+
+    #number {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width : 375px) {
+    .posted_pic {
+        display: none;
+    }
+}
